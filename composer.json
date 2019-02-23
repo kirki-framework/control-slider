@@ -1,7 +1,7 @@
 {
-    "name": "kirki-framework/control-select",
+    "name": "kirki-framework/control-slider",
     "type": "library",
-    "description": "Select control for the Kirki Customizer framework.",
+    "description": "Slider control for the Kirki Customizer framework.",
     "keywords": ["wordpress","customizer","framework"],
     "homepage": "https://aristath.github.io/kirki",
     "license": "MIT",
