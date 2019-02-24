@@ -52,7 +52,6 @@ class Slider extends Base {
 			'kirki-control-slider',
 			"$url/assets/scripts/control.js",
 			[
-				'kirki-script',
 				'jquery',
 				'customize-base',
 				'kirki-dynamic-control',
