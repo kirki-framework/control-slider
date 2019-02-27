@@ -14,3 +14,5 @@ add_action(
         class_alias( 'Kirki\Control\Slider', 'Kirki_Control_Slider' );
     }
 );
+
+class_alias( 'Kirki\Field\Slider', 'Kirki_Field_Slider' );
