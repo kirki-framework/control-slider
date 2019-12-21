@@ -59,9 +59,9 @@ const KirkiRangeForm = ( props ) => {
 	return (
 		<div>
 			<label className="customize-control-title">{ props.label }</label>
-			<span class="description customize-control-description" dangerouslySetInnerHTML={{ __html: props.description }}></span>
+			<span className="description customize-control-description" dangerouslySetInnerHTML={{ __html: props.description }}></span>
 			<div className="customize-control-notifications-container" ref={ props.setNotificationContainer }></div>
-			<div class="range-input-wrapper">
+			<div className="range-input-wrapper">
 				<div style={ styles.labelsWrapper } className={ 'manual-input-field' }>
 					<span>{ props.choices.prefix }{ props.choices.min }{ props.choices.suffix }</span>
 					<span style={ styles.valueLabel }>
