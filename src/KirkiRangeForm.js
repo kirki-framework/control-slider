@@ -26,8 +26,6 @@ const KirkiRangeForm = ( props ) => {
 	props.choices.max = formatNumber( props.choices.max );
 	props.choices.step = formatNumber( props.choices.step );
 
-	props.value = formatValue( props.value );
-
 	props.choices.prefix = props.choices.prefix || '';
 	props.choices.suffix = props.choices.suffix || '';
 
@@ -45,15 +43,15 @@ const KirkiRangeForm = ( props ) => {
 		default: {
 			labelsWrapper: {
 				display: 'flex',
-				'justify-content': 'space-between',
+				justifyContent: 'space-between',
 				color: '#aaaaaa',
-				'font-size': '10px',
+				fontSize: '10px',
 			},
 
 			valueLabel: {
 				color: '#555d66',
-				'font-weight': '700',
-				'font-size': '13px'
+				fontWeight: '700',
+				fontSize: '13px'
 			}
 		}
 	} );
@@ -68,7 +66,7 @@ const KirkiRangeForm = ( props ) => {
 					<span>{ props.choices.prefix }{ props.choices.min }{ props.choices.suffix }</span>
 					<span style={ styles.valueLabel }>
 						<NumberFormat
-							value={ props.value }
+							value={ formatValue( props.value ) }
 							displayType={ 'input' }
 							prefix={ props.choices.prefix }
 							suffix={ props.choices.suffix }
@@ -81,7 +79,7 @@ const KirkiRangeForm = ( props ) => {
 					maxValue={ props.choices.max }
 					minValue={ props.choices.min }
 					step={ props.choices.step }
-					value={ props.value }
+					value={ formatValue( props.value ) }
 					onChange={ handleChangeComplete }
 				/>
 			</div>
